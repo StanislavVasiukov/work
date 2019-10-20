@@ -198,25 +198,31 @@ margin: 0 auto;
   position: relative;
 }
 
-.flower:before {
+.features__icon:before {
   content: "";
   display: inline-block;
   height: 31px;
   width: 28px;
-  background-image: url(img/flower.png) center center;
   background-repeat: no-repeat;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 } 
+  
 
-  /* .features__pictures{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  } */
+.flower:before {
+  background: url(img/flower.png) center center;
+}
+
+
+.star:before {
+  background: url(img/mark-as-favorite-star.png) center center;
+} 
+
+.palette:before {
+  background: url(img/painter-palette.png) center center;
+}
 
 .feature__name {
   font-family: 'GothaPro', Open Sans, sans-serif; 
@@ -332,6 +338,7 @@ margin: 0 auto;
   display: inline-block;
   width: 28%;
   text-align: right;
+  margin-right: 21px;
 }
 
 .pagination__pages {
@@ -342,15 +349,12 @@ margin: 0 auto;
 }
 
 .left {
-  background-image: url(img/left-arrow.png);
+  margin-right: 16px;
+  background: url(img/left-arrow.png) center center;
 }
 
 .right {
   background-image: url(img/right-arrow.png);
-}
-
-.pagination__button {
-  display: inline=block;
 }
 
 .pagination__item {
@@ -358,18 +362,19 @@ margin: 0 auto;
   font-family: 'GothaPro', Open Sans, sans-serif; 
   font-weight: 700;  
   font-size: 14px;
-  height: 34px;
-  width: 34px;
   text-align: center;
   vertical-align: middle;
 }
 
 .pagination__link {
+  display: inline-block;
   text-decoration: none;
+  width: 34px;
+  padding: 9px 0;
 } 
 
-.pagination__item:hover {
-  color: #262626;
+.pagination__link:hover {
+  background: #262626;
 }
 
 /* footer styles */
@@ -446,8 +451,28 @@ margin: 0 auto;
   transform: translate(-50%, -50%);
 } 
 
-.vk {
-  background-image: url(img/vk.png);
+.vk:before {
+    background: url(img/vk.png) center center;
+    background-repeat: no-repeat;
+}
+
+.fb:before {
+  background: url(img/fb.png) center center;
+  background-repeat: no-repeat;
+}
+
+.google:before {
+  background: url(img/google.png) center center;
+  background-repeat: no-repeat;
+}
+
+.twitter:before {
+  background: url(img/twitter.png) center center;
+  background-repeat: no-repeat;
+}
+
+.mail:before {
+  background: url(img/mail.png) center center;
   background-repeat: no-repeat;
 }
 
